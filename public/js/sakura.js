@@ -85,14 +85,13 @@
         var rect = el.getBoundingClientRect();
         return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
     }
-
+    
     this.createPetal = function () {
         if (_this.el.dataset.sakuraAnimId) {
         setTimeout(function () {
             window.requestAnimationFrame(_this.createPetal);
         }, _this.settings.delay);
         } // Name the animations. These have to match the animations in the CSS file.
-
 
         var animationNames = {
         blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-soft-right', 'blow-medium-right'],
@@ -154,7 +153,7 @@
     Sakura.prototype.stop = function () {
     var _this2 = this;
 
-    var graceful = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+    var graceful = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : true;
     var animId = this.el.dataset.sakuraAnimId;
 
     if (animId) {

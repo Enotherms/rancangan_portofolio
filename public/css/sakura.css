@@ -12,18 +12,33 @@
     @-webkit-keyframes fall {
     0% {
         opacity: 0.9;
-        top: 0; }
+        top: 0;
+    }
+    30% {
+        opacity: 0.9;
+        top: 100%;
+    }
     100% {
         opacity: 0.2;
-        top: 100%; } }
+        top: 200%;
+    }
+}
 
-    @keyframes fall {
+
+@keyframes fall {
     0% {
         opacity: 0.9;
-        top: 0; }
+        top: 0;
+    }
+    30% {
+        opacity: 0.9;
+        top: 100%;
+    }
     100% {
         opacity: 0.2;
-        top: 100%; } }
+        top: 200%;
+    }
+}
 
     @-webkit-keyframes blow-soft-left {
     0% {
