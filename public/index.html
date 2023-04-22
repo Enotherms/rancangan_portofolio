@@ -5,20 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <title>Portofolio</title>
+        <title>Portfolio</title>
     </head>
-    <body class="bg-gray-800">
-        <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-            <div class="container">
-                <div class="relative flex items-center justify-between bg-gray-700 rounded-b-xl shadow-md shadow-black">
-                    <div class="px-5 text-orange-400">
-                        <a href="#home" class="block py-6 text-lg font-bold text-primary">Home</a>
+    <body class="bg-slate-50 dark:bg-slate-600 dark:text-slate-50">
+        <header class="mt-7 mr-7">
+            <div class="flex justify-end">
+                <span class="text-sm mr-2 ">Light</span>
+                <input type="checkbox" id="toggle" class="hidden" />
+                <label for="toggle">
+                    <div class="w-9 h-5 bg-slate-300 rounded-full flex items-center p-1 cursor-pointer">
+                        <div class="w-4 h-4 bg-slate-50 rounded-full toggle-circle"></div>
                     </div>
-                        
-                </div>
+                </label>
+                <span class="text-sm ml-2">Dark</span>
             </div>
         </header>
 
-        
+        <div class="bg-orange-300 ml-7 mt-7 max-w-lg  rounded-xl p-5 shadow-2xl dark:bg-gray-800 font-inter group font-sans">
+            <h5 class="font-bold text-slate-700 text-lg mb-3 dark:text-slate-200 ">About me</h5>
+            <p class="text-slate-600 dark:text-slate-200"
+                >
+                student at Universitas Budi Luhur. Find out more about me and feel free to connect with me here:<br><br>
+            </p>
+            <div style="display: flex;">
+                <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/-Abiyyu-blue?style=flat-square&logo=Linkedin&logoColor=white" width="80" height="132"></a>&nbsp;
+                <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/-Abiyyu-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/_biyyu" width="80" height="132"></a>
+            </div>
+        </div>
+
+        <div class="bg-orange-300 ml-7 mt-7 max-w-lg  rounded-xl p-5 shadow-2xl dark:bg-gray-800 font-inter group font-sans">
+            <h5 class="font-bold text-slate-700 text-lg mb-3 dark:text-slate-200 ">Currently Learning</h5>
+
+            <div style="display: flex;">
+                <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/Javascript-Language-EDF24B?style=for-the-badge&logo=javascript"></a>&nbsp;
+                <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react"></a>
+            </div>
+            <div class="mt-1">
+                <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/TailwindCSS-CSS-38B2AC?style=for-the-badge&logo=tailwind-css"></a>&nbsp;
+            </div>
+        </div>
+
+        <script>
+            const checkbox = document.querySelector('#toggle');
+            const html = document.querySelector('html');
+
+            checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+            });
+        </script>
     </body>
 </html>
