@@ -11,7 +11,7 @@
     <body class="bg-slate-200 dark:bg-slate-600 dark:text-slate-50">
             <header class="">
                 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-                <div class="w-full text-gray-700 bg-orange-400 dark:text-gray-200 dark:bg-gray-800">
+                <div class="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-900 shadow-lg overflow-hidden">
                     <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                         <div class="p-4 flex flex-row items-center justify-between">
                             <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline">Abiyyu</a>
@@ -24,7 +24,7 @@
                         </div>
                         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
                             <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-gray-200 rounded-lg dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
-                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Contact</a>
+                            <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark:hover:bg-gray-600 dark:focus:bg-gray-600 dark:focus:text-white dark:hover:text-white dark:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact</a>
                             <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark:bg-transparent dark: dark:-600 dark: dark:text-gray-200 md:mt-0 md:ml-4  -900  -200  " href="#">
                                 <div class="flex">
                                     <span class="text-sm mr-2 ">Light</span>
@@ -42,7 +42,7 @@
                 </div>
             </header>
 
-            <section id="home" class=" sm:h-96 grid grid-flow-row place-content-center px-5">
+            <section id="home" class="sm:h-96 grid grid-flow-row place-content-center px-16">
                 <div>
                     <div class=" my-7 mx-10 p-5 font-inter group">
                         <h5 class="text-3xl font-semibold text-gray-900 mb-3 dark:text-slate-200 ">About me</h5>
@@ -52,17 +52,59 @@
                         <p class="font-semibold text-gray-900 dark:text-slate-200">
                             student at Universitas Budi Luhur. Find out more about me and feel free to connect with me here: <br><br>
                         </p>
-                        <div style="display: flex;">
-                            <a href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/" ><img src="https://img.shields.io/badge/-Abiyyu-blue?style=flat-square&logo=Linkedin&logoColor=white" width="80" height="132"></a>&nbsp;
-                            <a href="https://twitter.com/_biyyu" ><img src="https://img.shields.io/badge/-Abiyyu-blue?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/_biyyu" width="80" height="132"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="px-16">
+                <h2 class="text-center mb-3 text-3xl font-semibold text-gray-900 dark:text-slate-200 ">Contact</h2>
+                <div class="flex place-content-center"><div class="w-1/2 border-b-4 rounded-lg dark:border-b-gray-900 border-b-sky-300"></div></div>
+                <p class="mx-7 mt-3 mb-8 text-center font-semibold text-gray-900 dark:text-slate-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quos, hic animi quasi ipsum exercitationem ipsam incidunt voluptatem.
+                </p>
+                <div class="grid grid-cols-1 lg:grid-cols-2 mt-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-2 p-4 bg-white dark:bg-gray-900 rounded-md shadow-lg overflow-hidden" style="opacity: 1; transform: none;">
+                        <div class="flex items-center justify-center py-4 rounded-md bg-slate-200 dark:bg-slate-200 shadow-lg overflow-hidden">
+                            <img class="w-16" src="img/logo/gmail.png" alt="Mail Icon">
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-gray-900 dark:text-slate-200">
+                            <p class="text-2xl font-semibold mb-1">Mail</p>
+                            <a target="_blank" class="border-b-4 font-semibold border-gray-900 dark:border-slate-200" href="mailto:sayabiyyu@gmail.com">sayabiyyu@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-2 p-4 bg-white dark:bg-gray-900 rounded-md shadow-lg overflow-hidden" style="opacity: 1; transform: none;">
+                        <div class="flex items-center justify-center py-4 rounded-md bg-slate-200 dark:bg-slate-200 shadow-lg overflow-hidden">
+                            <img class="w-16" src="img/logo/github.png">
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-gray-900 dark:text-slate-200">
+                            <p class="text-2xl mb-1 font-semibold">Github</p>
+                            <a target="_blank" class="border-b-4 font-semibold border-gray-900 dark:border-slate-200" href="https://github.com/Enotherms">Enotherms</a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-2 p-4 bg-white dark:bg-gray-900 rounded-md shadow-lg overflow-hidden" style="opacity: 1; transform: none;">
+                        <div class="flex items-center justify-center py-4 rounded-md bg-slate-200 dark:bg-slate-200 shadow-lg overflow-hidden">
+                            <img class="w-16" src="img/logo/linkedin.png">
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-gray-900 dark:text-slate-200">
+                            <p class="text-2xl mb-1 font-semibold">Linkedin</p>
+                            <a target="_blank" class="border-b-4 font-semibold border-gray-900 dark:border-slate-200" href="https://www.linkedin.com/in/abiyyu-dhiyaul-haq-333575268/">Abiyyu Dhiyaul Haq</a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 m-2 p-4 bg-white dark:bg-gray-900 rounded-md shadow-lg overflow-hidden" style="opacity: 1; transform: none;">
+                        <div class="flex items-center justify-center py-4 rounded-md bg-slate-200 dark:bg-slate-200 shadow-lg overflow-hidden">
+                            <img class="w-16" src="img/logo/instagram.png">
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-gray-900 dark:text-slate-200">
+                            <p class="text-2xl mb-1 font-semibold">Instagram</p>
+                            <a target="_blank" class="border-b-4 font-semibold border-gray-900 dark:border-slate-200" href="https://www.instagram.com/_biyyu/">_biyyu</a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="sertif" class=" dark:text-slate-50 pb-16">
+            <section id="sertif" class=" dark:text-slate-50 pb-16 pt-16">
                 <h2 class="text-center mb-3 text-3xl font-semibold text-gray-900 dark:text-slate-200 ">Experience </h2>
-                <div class="flex place-content-center"><div class="w-1/2 border-b-4 rounded-lg border-b-sky-400"></div></div>
+                <div class="flex place-content-center"><div class="w-1/2 border-b-4 rounded-lg dark:border-b-gray-900 border-b-sky-300"></div></div>
                 <p class="mx-7 mt-3 mb-8 text-center font-semibold text-gray-900 dark:text-slate-200">
                     Skills that I have acquired from my experience
                 </p>
@@ -93,12 +135,14 @@
                 </div>
             </section>
 
+            
+
             <section id="footer" >
                 <!--Footer container-->
-                <footer class="bg-orange-300 text-center text-white dark:bg-slate-500">
+                <footer class="bg-white text-center text-white dark:bg-slate-500">
                     <!--Copyright section-->
                     <div
-                    class="bg-orange-300 p-4 text-center text-neutral-700 dark:bg-gray-800 dark:text-neutral-200">
+                    class="bg-white p-4 text-center text-neutral-700 dark:bg-gray-900 dark:text-neutral-200">
                     © 2023 Copyright:
                     <a
                         class="text-neutral-800 dark:text-neutral-200"
